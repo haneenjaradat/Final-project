@@ -1,0 +1,120 @@
+<br><br><br><br><br>
+<form [ formGroup ]="useregister" (ngSubmit)="getValue">
+
+    <table border='0' width='600px' cellpadding='0' cellspacing='0' align='center'>
+
+        <tr align='center'>
+            <td>
+                <h2>Sign Up</h2>
+            </td>
+        </tr>
+
+        <table border='0' width='480px' cellpadding='0' cellspacing='0' align='center'>
+            <tr>
+                <td align='center'>First Name</td>
+                <td><input type='text' [ formControl ]="Fname" id="Fname"></td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td align='center'>Last Name:</td>
+                <td><input type='text' [ formControl ]="Lname" id="Lname"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td align='center'>User Name</td>
+                <td><input type='text' [ formControl ]="Username" id="Username"></td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td align='center'>Password</td>
+                <td><input type='password' [ formControl ]="Password" id="Password"></td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td align='center'>Gender</td>
+                <td><input type='text' [formControl]="Gender" id="Gender"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td align='center'>Email</td>
+                <td><input type='Email' [formControl]="Email" id="Email"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td align='center'>Phone Number</td>
+                <td><input type='phone' [formControl]="Phone" id="Phone"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+
+
+            <tr>
+                <td align='center'>Registor Date</td>
+                <td><input type='date' [formControl]="DateReg" id="DateReg"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+
+
+            <tr>
+                <td align='center'>Address</td>
+                <td><input type='text' [formControl]="Address" id="Address"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+
+
+
+            <!-- <tr> <td>&nbsp;</td> </tr> -->
+
+            <table border='0' cellpadding='0' cellspacing='0' width='480px' align='center'>
+
+
+                <tr>
+                    <td align='center'> <input type="checkbox" name="checkbox" required> </td>
+                    <td>Agree to the terms and conditions.</td>
+                </tr>
+
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <br>
+                    <td></td>
+                    <td align='center'><button type='submit' name='REGISTER' value="REGISTER" style="color: red; font-family: Times New Roman (Headings CS); font-weight: bold; font-size: 20;">  REGISTER  </button> </td>
+                    <td><br></td>
+                </tr>
+
+                <tr>
+                    <td><br></td>
+                </tr>
+
+            </table>
+        </table>
+    </table>
+</form>
