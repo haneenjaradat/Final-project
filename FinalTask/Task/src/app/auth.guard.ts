@@ -26,13 +26,12 @@ export class AuthGuard implements CanActivate {
     {
     
       this.toaster.error('this is user page')
-      this.router.navigate(['Admin/'])
+      //this.router.navigate(['Admin/'])
 
       return false
 
     }
-    
-    
+  
     else if (role ==null)
     {
       this.toaster.error("you ar")

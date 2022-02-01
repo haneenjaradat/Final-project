@@ -13,13 +13,18 @@ import { LoginComponent } from './logincomponent/login/login.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AdminComponent } from './AdminComponent/admin/admin.component';
-import { UserComponent } from './UserDashboard/user/user.component';
 import { IndexAdminComponent } from './index-admin/index-admin.component';
-import { UserIndexComponent } from './user-index/user-index.component';
 import { OrderAdminComponent } from './order-admin/order-admin.component';
 import { ToastRef, ToastrModule } from 'ngx-toastr';
 import { timeout } from 'rxjs';
 import { RegisterComponentComponent } from './register-component/register-component.component';
+import { IndexComponent } from './User/index/index.component';
+import { HistoryOrderComponent } from './User/history-order/history-order.component';
+import { UpdateProfileComponent } from './User/update-profile/update-profile.component';
+import { NavUDashboardComponent } from './shared/nav-udashboard/nav-udashboard.component';
+import { FUDashboardComponent } from './shared/fudashboard/fudashboard.component';
+import { SideBarComponent } from './shared/side-bar/side-bar.component';
+
 
 
 @NgModule({
@@ -32,11 +37,16 @@ import { RegisterComponentComponent } from './register-component/register-compon
     AboutComponent,
     LoginComponent,
     AdminComponent,
-    UserComponent,
     IndexAdminComponent,
-    UserIndexComponent,
     OrderAdminComponent,
-    RegisterComponentComponent
+    RegisterComponentComponent,
+    IndexComponent,
+    HistoryOrderComponent,
+    UpdateProfileComponent,
+    NavUDashboardComponent,
+    FUDashboardComponent,
+    SideBarComponent
+    
   ],
   imports: [
     BrowserModule,

@@ -8,9 +8,9 @@ import { ContactComponent } from './contact/contact/contact.component';
 import { HomeComponent } from './homecomponent/home/home.component';
 import { LoginComponent } from './logincomponent/login/login.component';
 import { HomemoduleModule } from './Module/homemodule/homemodule.module';
-const routes: Routes = [{path :'',loadChildren:()=>(import('./Module/homemodule/homemodule.module').then((x)=>x.HomemoduleModule))},
+const routes: Routes = [{path :'Home',loadChildren:()=>(import('./Module/homemodule/homemodule.module').then((x)=>x.HomemoduleModule))},
 {path :'Admin',loadChildren:()=>(import('./adminmodule/admin/admin.module').then((x)=>x.AdminModule)),canActivate:[AuthGuard]},
-{path :'User',loadChildren:()=>(import('./usermodule/user/user.module').then((x)=>x.UserModule)),canActivate:[AuthUserGuard]},
+{path :'',loadChildren:()=>(import('./usermodule/user/user.module').then((x)=>x.UserModule))},
 
 ];
 
