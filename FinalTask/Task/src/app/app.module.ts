@@ -24,6 +24,8 @@ import { UpdateProfileComponent } from './User/update-profile/update-profile.com
 import { NavUDashboardComponent } from './shared/nav-udashboard/nav-udashboard.component';
 import { FUDashboardComponent } from './shared/fudashboard/fudashboard.component';
 import { SideBarComponent } from './shared/side-bar/side-bar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -52,7 +54,9 @@ import { SideBarComponent } from './shared/side-bar/side-bar.component';
     BrowserModule,
     AppRoutingModule,
   ReactiveFormsModule,FormsModule,HttpClientModule,
-ToastrModule.forRoot({progressBar:true,timeOut:2000})  
+ToastrModule.forRoot({progressBar:true,timeOut:2000}),
+BrowserAnimationsModule,
+NgbModule  
    
 
   ],

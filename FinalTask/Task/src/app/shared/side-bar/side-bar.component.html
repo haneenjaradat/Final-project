@@ -1,7 +1,7 @@
 <!-- Main Sidebar Container -->
-<aside class="main-sidebar sidebar-dark-primary elevation-4 ">
+<aside class="main-sidebar sidebar-dark elevation-4 ">
     <!-- Sidebar -->
-    <div class="sidebar">
+    <div class="bg-text " >
     <!-- Sidebar user panel (optional) -->
     <!-- Sidebar Menu -->
        <nav class="mt-2">
@@ -14,58 +14,51 @@
                        <i class="nav-icon fas fa-th"></i>
                        <p asp-controller="Admin" asp-action="Index" class="nav-link ">
                            <span class="pcoded-micon"><i class="feather icon-home"></i></span>
-                           <span class="pcoded-mtext" style="color:white">@ViewBag.Title Dashboard</span>
+                           <span class="pcoded-mtext" > Dashboard</span>
                        </p>
                    </a>
                </li>
     
                <li class="nav-item" >
-                   <a asp-controller="Home" asp-action="Index" class="nav-link " target="_blank"><span class="pcoded-micon"><i class="fas fa-home"></i></span><span class="pcoded-mtext">  Home Page</span></a>
+                   <a [routerLink]="'/home'" class="nav-link " target="_blank"><span class="pcoded-micon"><i class="fas fa-home"></i></span><span class="pcoded-mtext" >  Home Page</span></a>
                </li>
     
               
                    <li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project" class="nav-item active">
-                       <a asp-controller="Admin" asp-action="Index" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">    Dashboard</span></a>
+                      
                    </li>
     
                     <li data-username="form elements advance componant validation masking wizard picker select" class="nav-item">
-                        <a asp-controller="Services" asp-action="Index" class="nav-link "><span class="pcoded-micon"><i class="fa fa-shopping-bag" aria-hidden="true"></i></span><span class="pcoded-mtext">  Services</span></a>
+                      
                     </li>
     
                    
                     <li data-username="form elements advance componant validation masking wizard picker select" class="nav-item">
-                        <a asp-controller="Diets" asp-action="Index" class="nav-link "><span class="pcoded-micon"><i class="fa fa-file" aria-hidden="true"></i></span><span class="pcoded-mtext">  Diets</span></a>
+                        <a  class="nav-link "><span class="pcoded-mtext"> <span>Diets</span> </span></a>
     
                     </li>
     
                     <li data-username="Table bootstrap datatable footable" class="nav-item">
-                        <a asp-controller="Employees" asp-action="Index" class="nav-link "><span class="pcoded-micon"><i class="fas fa-users"></i></span><span class="pcoded-mtext">  Employee</span></a>
+                        <a  class="nav-link "> <span>Employee</span></a>
                     </li>
+    
+                   
     
                     <li data-username="Table bootstrap datatable footable" class="nav-item">
-                        <a asp-controller="Admin" asp-action="SalarySlip" class="nav-link "><span class="pcoded-micon"><i class="fa fa-file" aria-hidden="true"></i></span><span class="pcoded-mtext">  Employees Salary Slip</span></a>
-                    </li>
+                         <a  class="nav-link "><i class="fa fa-sign-in" aria-hidden="true"></i><span class="pcoded-mtext">  SignIn</span></a>
+                  </li>
     
-                    
+                   <li data-username="Table bootstrap datatable footable" class="nav-item">
+                    <a  class="nav-link "><i class="fa fa-sign-in" aria-hidden="true"></i><span class="pcoded-mtext"> <span>SignUp</span> </span></a>
+                  </li>
+
+                  <li class="nav-item"> <a class="nav-link" ><span>Sign Out</span></a>  </li>
+          
+             
     
-                    
-    
-    
-    
-     <li data-username="Table bootstrap datatable footable" class="nav-item">
-               <a asp-controller="Authentication" asp-action="SignIn" class="nav-link "><i class="fa fa-sign-in" aria-hidden="true"></i><span class="pcoded-mtext">  SignIn</span></a>
-           </li>
-    
-               <li data-username="Table bootstrap datatable footable" class="nav-item">
-               <a asp-controller="Authentication" asp-action="SignUp" class="nav-link "><i class="fa fa-sign-in" aria-hidden="true"></i><span class="pcoded-mtext">  SignUp</span></a>
-           </li>
-               <li class="nav-item">
-                   <a class="nav-link" asp-controller="Authentication" asp-action="Logout">Sign Out</a>
-               </li>
-    
-           </ul>
+             </ul>
            
-           </nav>
+             </nav>
         
                 </div>
          

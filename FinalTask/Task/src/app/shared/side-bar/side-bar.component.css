@@ -8,3 +8,27 @@
 @import url('../../../assets/UserAssets/plugins/daterangepicker/daterangepicker.css');
 @import url('../../../assets/UserAssets/plugins/summernote/summernote-bs4.min.css');
 @import url('../../../assets/UserAssets/dist/css/adminlte.min.css');
+
+.bg-text {
+   
+     /* Black w/opacity/see-through */
+    
+    font-weight: bold;
+    color: white;
+    
+   
+    
+   
+    width: 100%;
+    padding: 30px;
+   
+    text-align: center;
+}
+
+span{
+    color:white
+}
+li{
+    padding-bottom: 10px;
+    font: size 32px;
+}
