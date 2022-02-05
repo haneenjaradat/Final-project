@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback');
+/*@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback');
 @import url('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
 @import url('../../../assets/UserAssets/plugins/fontawesome-free/css/all.min.css');
 @import url('../../../assets/UserAssets/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css');
@@ -7,4 +7,24 @@
 @import url('../../../assets/UserAssets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css');
 @import url('../../../assets/UserAssets/plugins/daterangepicker/daterangepicker.css');
 @import url('../../../assets/UserAssets/plugins/summernote/summernote-bs4.min.css');
-@import url('../../../assets/UserAssets/dist/css/adminlte.min.css');
+@import url('../../../assets/UserAssets/dist/css/adminlte.min.css');*/
+
+@import url('../../../assets/Uassets/css/pace.min.css');
+/*@import url('../../../assets/Uassets/js/pace.min.js');
+@import url('../../../assets/Uassets/plugins/vectormap/jquery-jvectormap-2.0.2.css');
+/*@import url('../../../assets/Uassets/images/favicon.ico');*/
+
+
+
+@import url('../../../assets/Uassets/plugins/simplebar/css/simplebar.css');
+
+@import url('../../../assets/Uassets/css/bootstrap.min.css');
+
+@import url('../../../assets/Uassets/css/animate.css');
+
+/*@import url('../../../assets/Uassets/css/icons.css');*/
+
+@import url('../../../assets/Uassets/css/sidebar-menu.css');
+
+
+@import url('../../../assets/Uassets/css/app-style.css');

@@ -28,8 +28,10 @@ export class AuthenservicService {
     var object:any=jwt_decode(response.token)
     console.log(response.token)
     console.log(object)
-    localStorage.setItem('Username',object.unique_name)
+
+    localStorage.setItem('ID',object.unique_name )
     localStorage.setItem('role',object.role)
+  
 
     if(object.role=='6'){
 

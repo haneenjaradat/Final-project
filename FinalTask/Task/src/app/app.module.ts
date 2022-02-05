@@ -26,6 +26,8 @@ import { FUDashboardComponent } from './shared/fudashboard/fudashboard.component
 import { SideBarComponent } from './shared/side-bar/side-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DetailsOrderComponent } from './User/details-order/details-order.component';
+import{​ MatDialogModule }​ from'@angular/material/dialog';
 
 
 
@@ -47,7 +49,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     UpdateProfileComponent,
     NavUDashboardComponent,
     FUDashboardComponent,
-    SideBarComponent
+    SideBarComponent,
+    DetailsOrderComponent
+    
     
   ],
   imports: [
@@ -56,10 +60,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   ReactiveFormsModule,FormsModule,HttpClientModule,
 ToastrModule.forRoot({progressBar:true,timeOut:2000}),
 BrowserAnimationsModule,
-NgbModule  
-   
-
+NgbModule , 
+HttpClientModule,
+ MatDialogModule
   ],
+  entryComponents:[DetailsOrderComponent],
+
   providers: [],
   bootstrap: [AppComponent]
 })
