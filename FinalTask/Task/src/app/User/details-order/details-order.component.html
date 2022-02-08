@@ -1,48 +1,36 @@
 
-    <h1 style ="text-align:center;font-size: 50px;color: aliceblue;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Order Details</h1>
+    <h1 style ="margin-left: 40%;font-weight: bold;font-size: 50px;color: rgb(11, 12, 12);font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Order Details</h1>
 
 <br />
 <br />
-      <table >
-        <!--   The Head of The Table -->
-               <thead>
-                   <tr>
-                    <th>Product Image</th>
 
-                    <th>Name</th>
-                  
-                    <th>GeneralSize</th>
-                  
-                    <th>Color</th>
-
-                    <th>Quantity</th>
-
-                    <th>EURSIZE</th>
-
-                    <th>UK</th>
-
-                    <th>Price</th>
-                   </tr>
-        <!--  End of The Head -->
-               </thead>
-        <!--   The Body of The Table -->
-               <tbody>
-
-                <tr *ngFor="let item of service.data2">
-                 
-                  <td><img src="../../../assets/1.jpg"></td>
-                  <td>{{ item.name }}</td>
-                  <td>{{ item.generalSize}} </td>
-                  <td>{{ item.color }}</td>
-                  <td>{{ item.quantity }}</td>
-                  <td>{{ item.eursize }}</td>
-                  <td>{{ item.uk }}</td>
-                  <td>{{ item.price }}</td>
-
-
-                </tr>
-      
-              </tbody>
-        
-           </table>
        
+<div class="cards-list" >
+  
+
+  <div class="card" *ngFor="let item of service.data2">
+    <div class="card_image" >
+      <img src="../../../assets/1.jpg" />
+     </div><br>
+     <br>
+    <div class="card_title title-white">
+      <p>{{ item.name }}</p>
+    </div>
+    
+    <div class="card-body row">
+      
+      <div class="col-lg-6">
+      <label>Price : $ {{ item. price }}</label><br>
+      <label>size : {{ item.generalSize }}</label><br></div>
+      <div class="col-lg-6">
+      <label>Color : {{ item.color }}</label><br>
+      <label>Quantity : {{ item.quantity }}</label><br></div>
+     
+    </div> 
+  </div>
+    
+  </div>
+
+  <div  style="    margin-left: 25%;margin-right: 20%;"> 
+    <button type="submit" class="button" (click)="closedialog();" >Close</button>
+  </div>

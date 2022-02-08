@@ -20,5 +20,37 @@
         
 
      
-         
+   th{
+font-size: px;
+
+   }
+.button {
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 4px;
+    width: 200px;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background-color: #a772ad;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(165, 162, 162);
+ 
+  }
+  
+  .button:hover {background-color: #da9ff1}
+  
+  .button:active {
+    background-color: #b2b9b2;
+    box-shadow: 0 5px rgb(177, 175, 175);
+    transform: translateY(4px);
+  }
+ 
+  
  

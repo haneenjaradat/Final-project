@@ -2,6 +2,9 @@
 /********* General CSS *********/
 /*******************************/
 
+body{
+background-color: white;
+}
 
 h1,
 h2, 
@@ -1766,3 +1769,20 @@ a:focus {
         text-align: center;
     }
 }
+
+.cdk-overlay-pane mat-dialog-container.mat-dialog-container { 
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+  
+    align-self: center;
+    overflow: auto;
+    pointer-events: auto; 
+    scroll-behavior:unset;
+    width: 900px;
+    height: 600px;
+  }

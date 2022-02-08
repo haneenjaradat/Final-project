@@ -1,0 +1,74 @@
+<div class="bg-theme bg-theme1" style="height:100%;background-image:url('../../../assets/Uassets/images/bg-themes/4.png');">
+ 
+    <!-- Start wrapper-->
+     <div id="wrapper">
+     
+   <app-nav-udashboard></app-nav-udashboard>
+    
+    <div class="clearfix">
+    </div>
+        
+      <div class="content-wrapper">
+        <div class="container-fluid">
+    
+      <!--Start Dashboard Content-->
+    
+      <div class="card card-authentication1 mx-auto my-4">
+		<div class="card-body">
+		 <div class="card-content p-2">
+		 	<div class="text-center">
+		 		
+		 	</div>
+		  <div class="card-title text-uppercase text-center py-3" style="font-size: 25px;">testimonial</div>
+
+		    <form [formGroup]="InsertTesti" (ngSubmit)="Insert_Testimonial()">
+                <div class="form-group">
+			  <label for="exampleInputName">Subject</label>
+			   <div class="position-relative has-icon-right">
+				  <textarea formControlName="Texet" class="form-control input-shadow" ></textarea>
+				  <div class="form-control-position">
+					  <i class="icon-user"></i>
+				  </div>
+			   </div>
+			</div>
+			  
+			 <button type="submit"  class="btn btn-light btn-block waves-effect waves-light" >Submit</button>
+			
+			
+			 </form>
+		   </div>
+		  </div>
+		  <div class="card-footer text-center py-3">
+		    
+		  </div>
+	     </div>
+          
+       
+        
+        
+
+              <div class="overlay toggle-menu"></div>
+            <!--end overlay-->
+            
+        </div>
+        <!-- End container-fluid-->
+        
+        </div><!--End content-wrapper-->
+       <!--Start Back To Top Button-->
+        <a href="" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
+        <!--End Back To Top Button-->
+        
+        <!--Start footer-->
+        <footer class="footer">
+          <div class="container">
+            <div class="text-center">
+              Copyright © 2022 Fashionista
+            </div>
+          </div>
+        </footer>
+        <!--End footer-->
+        
+
+       
+      </div>
+    </div>

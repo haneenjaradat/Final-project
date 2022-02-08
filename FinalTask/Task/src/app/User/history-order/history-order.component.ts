@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { ToastrService } from 'ngx-toastr';
 import { UserserviceService } from 'src/app/userservice.service';
 import { DetailsOrderComponent } from '../details-order/details-order.component';
@@ -11,10 +11,11 @@ import { DetailsOrderComponent } from '../details-order/details-order.component'
   styleUrls: ['./history-order.component.css']
 })
 export class HistoryOrderComponent implements OnInit {
+   id1:string=localStorage['ID']
 
   SearchOrder=new FormGroup({
     
-    CUST_ID:new FormControl(localStorage.getItem("ID"),[Validators.required]),
+  
     DateFrom:new FormControl('',[Validators.required]),
     DateTo:new FormControl('',[Validators.required])
     
@@ -22,8 +23,8 @@ export class HistoryOrderComponent implements OnInit {
     })
   constructor(public service:UserserviceService,private toaster:ToastrService, private matdialog:MatDialog) {
     this.service.DisplayOrder()
-    
-    this.toaster.success('Retrive All History Orders')
+    console.log(this.id1 );
+ 
    }
 
   ngOnInit(): void {
@@ -31,11 +32,37 @@ export class HistoryOrderComponent implements OnInit {
 
   openmatdialog(id:number)
   {​
-  this.matdialog.open(DetailsOrderComponent,{​data:{​id:id}​}​)
+    const dialog=new MatDialogConfig();
+    dialog.scrollStrategy?.enable
+   
+
+    
+    dialog.data={
+      id:id
+    }
+  this.matdialog.open(DetailsOrderComponent,dialog)
+  
+
   }​
 
   GetOrderBetweenDate(){
-    this.service.GetOrderBetweenDate(this.SearchOrder.value)
+   // this.SearchOrder.controls['CUST_ID'].setValue()
+  
+  
+ 
+   var obj={
+
+
+    CUST_ID:parseInt(this.id1),
+    DateFrom:this.SearchOrder.controls['DateFrom'].value,
+    DateTo:this.SearchOrder.controls['DateTo'].value
+    
+
   }
+  console.log(obj)
+    this.service.GetOrderBetweenDate(obj)
+  }
+
+
 
 }

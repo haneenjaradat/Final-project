@@ -31,7 +31,7 @@ export class AuthenservicService {
 
     localStorage.setItem('ID',object.unique_name )
     localStorage.setItem('role',object.role)
-  
+    id1:Number=localStorage['ID']
 
     if(object.role=='6'){
 

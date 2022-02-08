@@ -19,5 +19,9 @@ export class DetailsOrderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
+  closedialog(){
+    this.matdialog.closeAll();
+  }
 
 }

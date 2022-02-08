@@ -28,6 +28,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DetailsOrderComponent } from './User/details-order/details-order.component';
 import{​ MatDialogModule }​ from'@angular/material/dialog';
+import { UpdateBalanceComponent } from './User/update-balance/update-balance.component';
+import { TistimonialComponent } from './User/tistimonial/tistimonial.component';
 
 
 
@@ -50,7 +52,9 @@ import{​ MatDialogModule }​ from'@angular/material/dialog';
     NavUDashboardComponent,
     FUDashboardComponent,
     SideBarComponent,
-    DetailsOrderComponent
+    DetailsOrderComponent,
+    UpdateBalanceComponent,
+    TistimonialComponent
     
     
   ],
