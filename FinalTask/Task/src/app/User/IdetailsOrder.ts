@@ -9,9 +9,4 @@ export interface IdetailsOrder{
     uk :number
     price :number
 
-
-
-
-
-
 }

@@ -29,7 +29,7 @@ export class TistimonialComponent implements OnInit {
       Texet:this.InsertTesti.controls['Texet'].value,
       Status:this.InsertTesti.controls['Status'].value
     }
-   
+   console.log(obj)
   this.service.Insert_Testimonial(obj)
   window.location.reload()
   }

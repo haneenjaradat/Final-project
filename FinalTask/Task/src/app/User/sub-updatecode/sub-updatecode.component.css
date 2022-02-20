@@ -1,0 +1,16 @@
+
+::ng-deep .mat-dialog-container {
+
+
+    background: #b4b1b1;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 20px;
+    margin:20px;
+    overflow: auto;
+    width:100%;
+   
+}
+
+

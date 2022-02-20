@@ -34,7 +34,7 @@
 			  <div class="form-group"  >
 			  <label for="exampleInputEmailId" >Expiry Date</label>
 			   <div class="position-relative has-icon-right">
-				  <input type="text"  value="{{service.dataVisa['experd_Date']|date}}" class="form-control input-shadow" readonly>
+				  <input  id =""type="text"  value="{{service.dataVisa['experd_Date']|date:'MM-dd'}}" class="form-control input-shadow" readonly>
 				  <div class="form-control-position">
 					  <i class="icon-envelope-open"></i>
 				  </div>
@@ -58,9 +58,9 @@
 				   </div>
 				</div>
 			   </div>
-			 <button type="button" [disabled]="false" class="btn btn-light btn-block waves-effect waves-light" (click)="Update_Balance();">Update</button>
+			 <button type="button" [disabled]="false" class="btn btn-light btn-block waves-effect waves-light" (click)="openDialog();">Update</button>
 			
-			  
+			  <button (click)="erroalert()">rr</button>
 			
 			 </form>
 		   </div>

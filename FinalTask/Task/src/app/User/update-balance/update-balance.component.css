@@ -3,6 +3,7 @@
 @import url('../../../assets/Uassets/plugins/vectormap/jquery-jvectormap-2.0.2.css');
 /*@import url('../../../assets/Uassets/images/favicon.ico');*/
 
+@import '~bootstrap/dist/css/bootstrap.min.css';    
 
 
 @import url('../../../assets/Uassets/plugins/simplebar/css/simplebar.css');
@@ -17,3 +18,6 @@
 
 
 @import url('../../../assets/Uassets/css/app-style.css');
+::ng-deep .my-class{
+    background-color:aliceblue;
+ }

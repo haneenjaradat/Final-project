@@ -30,8 +30,10 @@ import { DetailsOrderComponent } from './User/details-order/details-order.compon
 import{​ MatDialogModule }​ from'@angular/material/dialog';
 import { UpdateBalanceComponent } from './User/update-balance/update-balance.component';
 import { TistimonialComponent } from './User/tistimonial/tistimonial.component';
+import { SubUpdatecodeComponent } from './User/sub-updatecode/sub-updatecode.component';
 
-
+import { SweetAlert2Module } from "@sweetalert2/ngx-sweetalert2";
+//import { SweetAlert2Module } from '@toverux/ngx-sweetalert2';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,8 @@ import { TistimonialComponent } from './User/tistimonial/tistimonial.component';
     SideBarComponent,
     DetailsOrderComponent,
     UpdateBalanceComponent,
-    TistimonialComponent
+    TistimonialComponent,
+    SubUpdatecodeComponent
     
     
   ],
@@ -66,9 +69,11 @@ ToastrModule.forRoot({progressBar:true,timeOut:2000}),
 BrowserAnimationsModule,
 NgbModule , 
 HttpClientModule,
- MatDialogModule
+ MatDialogModule,
+ 
+
   ],
-  entryComponents:[DetailsOrderComponent],
+  entryComponents:[DetailsOrderComponent,SubUpdatecodeComponent],
 
   providers: [],
   bootstrap: [AppComponent]

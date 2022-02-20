@@ -61,6 +61,8 @@ export class HistoryOrderComponent implements OnInit {
   }
   console.log(obj)
     this.service.GetOrderBetweenDate(obj)
+
+    
   }
 
 

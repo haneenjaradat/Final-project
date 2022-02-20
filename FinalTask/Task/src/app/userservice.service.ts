@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { order1 } from './order1';
 import { IdetailsOrder } from './User/IdetailsOrder';
+import { IUpdateCode } from './User/IUpdateCode';
 import { Visa } from './Visa';
 
 @Injectable({
@@ -11,9 +12,10 @@ import { Visa } from './Visa';
 })
 export class UserserviceService {
 
-  public data1:any=[{}]
+  public data1:any
   public data2:any=[{}]
   public dataVisa:any=[{}]
+  public updatecode:any=[{}]
   id?:number
   constructor(private router:Router,private http:HttpClient,private toaster:ToastrService) {
     
@@ -21,9 +23,10 @@ export class UserserviceService {
   
 
     DisplayOrder(){
-      var id=localStorage.getItem('ID')
-      this.http.get<order1[]>('https://localhost:44319/api/Orders/DisplayOrderUser/'+id).subscribe((result)=>{this.data1=result
-    console.log(this.data1)
+      
+    var id=localStorage.getItem('ID')
+    this.http.get<order1[]>('https://localhost:44319/api/Orders/DisplayOrderUser/'+id).subscribe((result)=>{this.data1=result
+    console.log(this.data1+"lllll")
     //this.toaster.success('hello','all retreive data')
 if(this.data1.length==0)
 {
@@ -63,6 +66,7 @@ if(err.status==0)
    }
 
    DisplayDetailsOrder(id:number){
+ 
     this.http.get<IdetailsOrder[]>('https://localhost:44319/api/Orders/DisplayDetailsOrder/'+id).subscribe((result)=>{this.data2=result})
    
  }
@@ -118,7 +122,7 @@ if(err.status==0)
   const requestOptions={
     headers:new HttpHeaders(headersDict)
   }
-  this.http.post('https://localhost:44319/api/Orders/DisplayOrderBetweenDateUser',orderdate,requestOptions).subscribe((result:any)=>{
+  this.http.post<order1[]>('https://localhost:44319/api/Orders/DisplayOrderBetweenDateUser',orderdate,requestOptions).subscribe((result:any)=>{
     const response={
       re:result 
     }
@@ -131,4 +135,9 @@ if(err.status==0)
 
  }
  
+ update_code(){
+  var id=localStorage.getItem('ID')
+  this.http.get<IUpdateCode>('https://localhost:44319/api/Payment/UpdateeCode/'+id).subscribe((result)=>{this.updatecode=result})
+
+ }
 }
